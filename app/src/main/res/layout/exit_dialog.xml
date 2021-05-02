@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/exit_dialog_title"
+        android:textColor="@color/forground"
+        android:text="@string/exit_dialog"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp" />
+    <View
+        android:layout_width="100dp"
+        android:layout_height="2dp"
+        app:layout_constraintTop_toBottomOf="@id/exit_dialog_title"
+        android:background="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/exit_dialog_title_underline" />
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/exit_dialog_adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        ads:layout_constraintTop_toBottomOf="@+id/exit_dialog_title_underline"
+        ads:layout_constraintStart_toStartOf="parent"
+        ads:layout_constraintEnd_toEndOf="parent"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_unit_id">
+    </com.google.android.gms.ads.AdView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/exit_dialog_adView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/main_text_view"
+        android:textSize="16sp"
+        android:text="@string/do_you_really_want_to_exit_from_gjob_app"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/main_text_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/exit_dialog_ok_text_view_btn"
+        android:textSize="16sp"
+        android:text="@string/ok"
+        android:textColor="@color/forground"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/main_text_view"
+        app:layout_constraintEnd_toStartOf="@+id/exit_dialog_ok_text_view_btn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/exit_dialog_cancel_text_view_btn"
+        android:textSize="16sp"
+        android:text="@string/cancel"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="10dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

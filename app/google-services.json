@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "165755204850",
+    "project_id": "gjob-2c3b2",
+    "storage_bucket": "gjob-2c3b2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:165755204850:android:f253c59cf757649b354c6b",
+        "android_client_info": {
+          "package_name": "com.iab.GJobs"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "165755204850-dbfto37hd1sk53teeerloqpfr25i28mu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB07XXE2r0XjdaY4Fw-lkZPNakwAZ4-Q3A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "165755204850-dbfto37hd1sk53teeerloqpfr25i28mu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
